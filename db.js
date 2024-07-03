@@ -4,8 +4,8 @@ const connectDb=async()=>{
   .connect(process.env.MONGO_URI, {
     dbName: 'API',
   })
-  .then(() => {
-    console.log('Database connected')
+  .then((c) => {
+    console.log(`database connected with ${c.connection.host}`)
   })
   .catch((e) => {
     console.log(e)
