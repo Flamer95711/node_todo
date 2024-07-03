@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "set MODE_ENV=DEV && nodemon app.js",
+    "dev": "set MODE_ENV=DEV && node app.js",
     "start": "set MODE_ENV=Production && node app.js"
   },
   "author": "",
